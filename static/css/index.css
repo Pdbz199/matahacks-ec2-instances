@@ -1,0 +1,29 @@
+html {
+    height: 100%;
+}
+
+body {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+
+    background-color: #0d1117;
+
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    grid-template-areas:
+        ". . ."
+        ". text ."
+        ". . .";
+}
+
+h1 {
+    justify-self: center;
+    align-self: center;
+    grid-area: text;
+    color: white;
+    font-size: 7em;
+}
